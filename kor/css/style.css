@@ -1,0 +1,1079 @@
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: max-content;
+    z-index: 1000000;
+    height:140px;
+    height:7.292vw;
+    transition: 0.5s linear;
+}
+header.scroll{
+    background-color:rgba(19, 91, 114, 0.55);
+}
+header .inner{
+    width: 100%;
+    max-width: calc(100% - 140px);
+    max-width: calc(100% - 7.292vw);
+    margin: 0 auto;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .logo{
+    width: 285px;
+    width: 14.844vw;
+}
+header .logo a{
+    display: block;
+}
+header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+/* gnb */
+header .gnb ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+header .gnb a{
+    font-size: 32px;
+    font-size: 1.667vw;
+    font-family: "DungGeun";
+    color: #fff;
+    padding: 0 40px;
+    padding: 0 2.083vw;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+header .gnb a:hover{
+    opacity: 0.6;
+}
+header .gnb li:first-child a{
+    padding-left: 0;
+}
+header .gnb li:last-child a{
+    padding-right: 0;
+}
+/* gnb */
+
+/* lang */
+header .lang{
+    display: flex;
+    align-items: center;
+} 
+header .lang a{
+    font-size: 32px;
+    font-size: 1.667vw;
+    font-family: "DungGeun";
+    color: #fff;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+header .lang a:hover{
+    opacity: 1;
+}
+header .lang a.active{
+    opacity: 1;
+}
+header .lang a.active:hover{
+    opacity: 0.6;
+}
+header .lang li:last-child a::before{
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 3px;
+    width: 0.156vw;
+    height: 16px;
+    height: 0.833vw;
+    background-color: #fff;
+}
+/* lang */
+
+/* header */
+
+/* intro */
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/bg/intro-bg.png") no-repeat center / cover;
+}
+
+.cloud-container{
+    position: absolute;
+    width: 100vw;
+    top: 150px;
+    top: 7.813vw;
+    left: 0;
+}
+.cloud-container .inner{
+    transform: translateX(0%);
+    animation: moveAnim 160s linear infinite forwards;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cloud-container img{
+    width: 100%;
+    margin-right: 250px;
+    margin-right: 13.021vw;
+    margin-top: 9px;
+    margin-top: 0.469vw;
+}
+
+.rabbit-container{
+    position: absolute;
+    bottom: 25px;
+    bottom: 1.302vw;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+.rabbit-container .inner{
+    display: flex;
+    transform: translateX(0%);
+    animation: moveAnim 80s linear infinite forwards;
+}
+.rabbit-container img{
+    width: 100%;
+    height: auto;
+    margin-right: 54px;
+    margin-right: 2.813vw;
+}
+
+.castle-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.castle-container img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.castle-container img:first-child{
+    margin-bottom: -50px;
+    margin-bottom: -2.604vw;
+}
+
+.floor-container{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+.floor-container img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.intro-text{
+    position: absolute;
+    top: calc(50% - 125px);
+    top: calc(50% - 5vh);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+.intro-text h2{
+    font-size: 120px;
+    font-size: 6.250vw;
+    text-transform: uppercase;
+    font-family: "DungGeun";
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    animation: fadeIn-up 0.5s 0.1s ease forwards;
+}
+.intro-text p{
+    font-size: 32px;
+    font-size: 1.667vw;
+    font-family: "DungGeun";
+    margin-bottom: 52px;
+    margin-bottom: 2.708vw;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    animation: fadeIn-up 0.5s 0.25s ease forwards;
+}
+.intro-text a{
+    font-size: 36px;
+    font-size: 1.875vw;
+    font-family: "DungGeun";
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    width: 15.573vw;
+    height: 82px;
+    height: 4.271vw;
+    background: url("../images/button/btn-bg2.png") no-repeat center / cover;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    animation: fadeIn-up 0.5s 0.35s ease forwards;
+}
+.intro-text a:hover{
+    background: url("../images/button/btn-bg-hover.png") no-repeat center / cover;
+    color: #11bbf1;
+}
+
+/* intro */
+
+/* about */
+
+.about{
+    width: 100vw;
+    background-color: #043d30;
+    padding: 100px 0;
+}
+.about .inner{
+    background-color: #043d30;
+    width: 100%;
+    max-width: 1280px;
+    max-width: 66.667vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h3{
+    font-size: 70px;
+    font-size: 3.646vw;
+    font-family: "DungGeun";
+    color: #fff;
+    margin-bottom: 40px;
+    margin-bottom: 2.083vw;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+.about p{
+    font-size: 26px;
+    font-size: 1.354vw;
+    font-family: "DungGeun";
+    color: #fff;
+    line-height: 42px;
+    line-height: 2.188vw;
+    margin-bottom: 50px;
+    margin-bottom: 2.604vw;
+    text-align: center;
+    letter-spacing: -0.65px;
+    letter-spacing: -0.034vw;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+.about a{
+    font-size: 36px;
+    font-size: 1.875vw;
+    font-family: "DungGeun";
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    width: 15.573vw;
+    height: 82px;
+    height: 4.271vw;
+    background: url("../images/button/btn-bg.png") no-repeat center / cover;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+.about a:hover {
+    color: #043d30;
+    background: url("../images/button/btn-bg-hover.png") no-repeat center / cover;
+}
+.about.show h3{
+    animation: fadeIn-up 0.5s 0.1s ease forwards;
+}
+.about.show p{
+    animation: fadeIn-up 0.5s 0.25s ease forwards;
+}
+.about.show a{
+    animation: fadeIn-up 0.5s 0.35s ease forwards;
+}
+/* about */
+
+/* content */
+
+.content{
+    position: relative;
+    background: url("../images/bg/content-bg.png") no-repeat center / cover;
+    width: 100vw;
+    height: max-content;
+}
+.content .loadmap{
+    padding-top: 200px;
+    padding-top: 10.417vw;
+    height: 1586px;
+    height: 82.604vw;
+}
+.content .rabbit{
+    height: 315px;
+    height: 16.406vw;
+}
+.content .floor-container{
+    height: auto;
+}
+.content .floor-container img{
+    top: -5px;
+    bottom: auto;
+}
+.content .rabbit-container{
+    top: -7px;
+    bottom: auto;
+    animation: moveAnim 80s reverse linear infinite forwards;
+    display: flex;
+}
+.loadmap .inner{
+    width: 100%;
+    max-width: 1280px;
+    max-width: 66.667vw;
+    height: max-content;
+    margin: 0 auto;
+}
+.loadmap h3{
+    font-size: 70px;
+    font-size: 3.646vw;
+    font-family: "DungGeun";
+    color: #fff;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-bottom: 6.250vw;
+}
+.loadmap-content{
+    display: flex;
+    justify-content: space-between;
+}
+.loadmap-content .left,
+.loadmap-content .right{
+    width: calc((100% - 110px) / 2);
+    width: calc((100% - 5.729vw) / 2);
+}
+.loadmap-content .center{
+    width: 220px;
+    width: 11.458vw;
+    display: flex;
+    justify-content: center;
+}
+.loadmap-content .left img,
+.loadmap-content .right img{
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+.loadmap-content .left img.show,
+.loadmap-content .right img.show{
+    animation: fadeIn-up 0.5s 0.1s ease forwards;
+}
+
+.loadmap-content .left img:nth-child(2){
+    margin-top: 350px;
+    margin-top: 16.708vw;
+}
+.loadmap-content .left img:nth-child(3){
+    margin-top: 360px;
+    margin-top: 18.750vw;
+}
+.loadmap-content .right img{
+    width: 100%;
+}
+.loadmap-content .right img:nth-child(1){
+    margin-top: 220px;
+    margin-top: 12.8vw;
+}
+.loadmap-content .right img:nth-child(2){
+    margin-top: 355px;
+    margin-top: 19.8vw;
+}
+.loadmap-percentage{
+    width: 110px;
+    width: 5.729vw;
+}
+/* content */
+
+
+/* top-btn */
+.top-btn{
+    position: fixed;
+    right: 70px;
+    right: 3.646vw;
+    bottom: 70px;
+    bottom: 3.646vw;
+    width: 58px;
+    width: 3.021vw;
+    height: 130px;
+    height: 6.771vw;
+    background: url("../images/button/top-btn.png") no-repeat center / cover;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: 0.3s ease;
+    transform: translateY(20px);
+}
+.top-btn.show{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+/* top-btn */
+
+/* contact */
+
+.contact{
+    margin-top: 195px;
+    margin-top: 10.156vw;
+    padding-bottom: 218px;
+    padding-bottom: 11.354vw;
+}
+.contact .inner{
+    width: 100%;
+    max-width: max-cotnent;
+    margin: 0 auto;
+}
+.contact h3{
+    font-size: 70px;
+    font-size: 3.646vw;
+    font-family: "DungGeun";
+    color: #fff;
+    margin-bottom: 95px;
+    margin-bottom: 4.948vw;
+    text-align: center;
+}
+.contact h3.fadeIn{
+    animation-delay: 0.3s;
+}
+.contact .team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .team.fadeIn{
+    animation-delay:0.3s;
+}
+.contact .team li{
+    width: 520px;
+    width: 27.083vw;
+    height: max-content;
+    margin-right: 60px;
+    margin-right: 3.125vw;
+}
+.contact .team li:last-child{
+    margin-right: 0;
+}
+.contact .team li:first-child{
+    background: url("../images/character/LaniFrame.png") no-repeat center / 100% 100%;
+}
+.contact .team li:nth-child(2){
+    background: url("../images/character/SeniFrame.png") no-repeat center / 100% 100%;
+}
+.contact .team li:nth-child(3){
+    background: url("../images/character/KaniFrame.png") no-repeat center / 100% 100%;
+}
+
+.contact .team-img-container {
+    height: 300px;
+    height: 15.625vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    width: 97.6%;
+    height: 232px;
+    margin: 0 auto;
+    top: 4px;
+}
+.contact .team-img-container img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.contact .team li:first-child .team-img-container{
+    background-color: #fff2b1;
+}
+.contact .team li:nth-child(2) .team-img-container{
+    background-color: #d8c9f4;
+}
+.contact .team li:nth-child(3) .team-img-container{
+    background-color: #ccf2bc;
+}
+
+.contact .team li:first-child .team-img-container img{
+    width: 206px;
+    width: 10.729vw;
+    height: auto;
+}
+.contact .team li:nth-child(2) .team-img-container img{
+    width: 142px;
+    width: 8.396vw;
+    height: auto;
+}
+.contact .team li:nth-child(3) .team-img-container img{
+    width: 206px;
+    width: 11.729vw;
+    height: auto;
+}
+
+.contact .team-desc-container{
+    padding: 30px 0;
+    padding: 1.563vw 0;
+    text-align: center;
+    min-height: 250px;
+    min-height: 16.33vw;
+}
+.contact .team h4{
+    font-size: 38px;
+    font-size: 1.979vw;
+    font-family: "DungGeun";
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 1.042vw;
+    margin-right: 0;
+}
+.contact .team h4 span{
+    color: #fe5948;
+}
+.contact .team p{
+    font-size: 26px;
+    font-size: 1.354vw;
+    font-family: "DungGeun";
+    color: #5e6270;
+    line-height: 1.5;
+    letter-spacing: -0.35px;
+}
+.contact-container{
+    margin-top: 60px;
+    margin-top: 3.125vw;
+}
+.contact .contact-container.fadeIn{
+    animation-delay: 0.5s;
+}
+.contact-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container li{
+    margin-right: 60px;
+    margin-right: 3.125vw;
+}
+.contact-container li:last-child{
+    margin-right: 0;
+}
+.contact-container li img{
+    width: 150px;
+    width: 7.813vw;
+    height: 150px;
+    height: 7.813vw;
+}
+.contact .cloud-container{
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    top: 25%;
+    z-index: -1;
+}
+/* contact */
+
+/* partnership */
+
+/* 2022-01-15 */
+.partnership .inner{
+    width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    padding-bottom: 6.250vw;
+    position: relative;
+}
+.partnership h3{
+    font-size: 70px;
+    font-size: 3.646vw;
+    font-family: "DungGeun";
+    color: #fff;
+    margin-bottom: 95px;
+    margin-bottom: 4.948vw;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.partnership h3.fadeIn{
+    animation-delay: 0.3s;
+}
+
+.partnership .swiper{
+    opacity: 0;
+    transform: translateY(20px);
+    animation-delay: 0.5s;
+    
+    width: 100%;
+    max-width: 1200px;
+    max-width: 62.500vw;
+
+    cursor: pointer;
+}
+.partnership .swiper.fadeIn{
+    animation-delay: 0.5s ;
+}
+.partnership li img{
+    width: 100%;
+}
+.swiper-button-prev{
+    left: -145px !important;
+    width: 86px !important;
+    height: 86px !important;
+    left: -7.552vw !important;
+    width: 4.479vw !important;
+    height: 4.479vw !important;
+    background: url("../images/icons/ico-prev-btn.png") no-repeat center / cover !important;
+    transition: 0.3s ease;
+    margin-top: auto !important;
+    transform: translateY(calc(-50% + 1.175vw)) !important;
+}
+.swiper-button-prev:hover{
+    opacity: 0.8;
+}
+.swiper-button-next{
+    right: -145px !important;
+    width: 86px !important;
+    height: 86px !important;
+    right: -7.552vw !important;
+    width: 4.479vw !important;
+    height: 4.479vw !important;
+    background: url("../images/icons/ico-next-btn.png") no-repeat center / cover !important;
+    transition: 0.3s ease;
+    margin-top: auto !important;
+    transform: translateY(calc(-50% + 1.175vw)) !important;
+}
+.swiper-button-next:hover{
+    opacity: 0.8;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    display: none !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    display: none !important;
+}
+
+/* 2022-01-15 */
+
+/* partnership */
+
+footer{
+    height: 315px;
+    height: 16.406vw;
+    position: relative;
+}
+.content footer .floor-container{
+    height: 100%;
+}
+.content footer .floor-container img{
+    top: auto;
+    bottom: 40px;
+    bottom: 2.083vw;
+}
+.content footer .rabbit-container{
+    animation: moveAnim 80s linear infinite forwards;
+    top: -40px;
+    top: -2.083vw;
+    top: 0;
+}
+footer p{
+    font-size: 26px;
+    font-size: 1.354vw;
+    font-family: "DungGeun";
+    color: #fff;
+    position: absolute;
+    bottom: 80px;
+    bottom: 4.167vw;
+    bottom: 4vw;
+    text-align: center;
+    width: 100%;
+    z-index: 10000000;
+}
+
+.fadeIn{
+    opacity:0;
+    transform: translateY(-20px);
+    visibility: hidden;
+}
+.fadeIn.show{
+    animation: fadeIn-up 0.5s ease forwards;
+}
+
+/* 2022-01-15 */
+.swiper-pagination{
+    opacity: 0;
+    visibility: hidden;
+}
+/* 2022-01-15 */
+
+
+/* mobile */
+@media all and (max-width:750px){
+    header{
+        z-index: 10;
+        height:32.800vw;
+    }
+    header.scroll::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #427d8e;
+    }
+    header .inner{
+        max-width: calc(100% - 80px);
+        max-width: calc(100% - 10.667vw);
+        margin-top: -40px;
+        margin-top: -7.43vw;
+    }
+    header .logo{
+        width: 353px;
+        width: 47.067vw;
+    }
+    header .lang a{
+        font-size: 40px;
+        font-size: 5.333vw;
+    }
+    header .gnb ul{
+        top: 180px;
+        top: 32.5vw;
+        width: 100%;
+    }
+    header .gnb a{
+        font-size: 40px;
+        font-size: 5.333vw;
+        padding: 0 25px;
+        padding: 0 3.333vw;
+    }
+    header .lang li:last-child a::before{
+        margin: 0 20px;
+        margin: 0 2.667vw;
+        width: 4px;
+        width: 0.533vw;
+        height: 24px;
+        height: 3.200vw;
+    }
+
+    .intro-text{
+        width: 100%;
+        top: calc(50% - 5vh)
+    }
+    .intro-text h2{
+        font-size: 126px;
+        font-size: 16.800vw;
+        margin-bottom: 10px;
+        margin-bottom: 1.333vw;
+    }
+    .intro-text p{
+        font-size: 40px;
+        font-size: 5.333vw;
+        margin-bottom: 60px;
+        margin-bottom: 8vw;
+    }
+    .intro-text a{
+        width: 319px;
+        width: 42.533vw;
+        height: 105px;
+        height: 14vw;
+        font-size: 44px;
+        font-size: 5.867vw;
+        background: url("../images/button/btn-bg2-mo.png") no-repeat center / cover;
+    }
+    .intro-text a:hover{
+        background: url("../images/button/btn-bg-hover2.png") no-repeat center / cover;
+    }
+    .rabbit-container{
+        bottom: -5px;
+    }
+    .about{
+        padding: 84px 0;
+        padding: 11.200vw 0;
+    }
+    .about .inner,
+    .loadmap .inner,
+    .contact .inner{
+        max-width: 670px;
+        max-width: 89.333vw;
+    }
+    .cloud-container{
+        top: 300px;
+        top: 40vw;
+    }
+    .about h3{
+        font-size: 72px;
+        font-size: 9.600vw;
+        margin-bottom: 38px;
+        margin-bottom: 5.067vw;
+    }
+    .about p{
+        font-size: 28px;
+        font-size: 3.733vw;
+        margin-bottom: 38px;
+        margin-bottom: 5.067vw;
+        line-height: 42px;
+        line-height: 5.600vw;
+        margin-bottom: 70px;
+        margin-bottom: 9.333vw;
+    }
+    .about a{
+        width: 319px;
+        width: 42.533vw;
+        height: 105px;
+        height: 14vw;
+        font-size: 44px;
+        font-size: 5.867vw;
+        background: url("../images/button/btn-bg2-mo.png") no-repeat center / cover;
+    }
+    .content .rabbit{
+        height: 120px;
+        height: 16vw;
+    }
+
+    .loadmap h3,
+    .contact h3,
+    .partnership h3{
+        font-size: 72px;
+        font-size: 9.600vw;
+        margin-bottom: 75px;
+        margin-bottom: 10vw;
+        width: 100%;
+        white-space: nowrap;
+        display: block;
+    }
+    .contact .cloud-container{
+        display: none;
+    }
+    .loadmap-content .left{
+        width: calc(100% - 138px);
+        width: calc(100% - 18.400vw);
+    }
+    .loadmap-content .right{
+        width:138px;
+        width:18.400vw;
+    }
+    .loadmap-content .right img:nth-child(1){
+        margin-top: 0;
+    }
+    .content .loadmap{
+        height: 1433px;
+        height: 225.067vw;
+    }
+    .loadmap-content .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .loadmap-content .right img{
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: 110px;
+        width: 14.667vw;
+        display: flex;
+    }
+    .loadmap-content .left img:nth-child(1){
+        margin-top: -2.5vw;
+    }
+    .loadmap-content .left img:nth-child(2){
+        margin-top: 85px;
+        margin-top: 4.333vw;
+    }
+    .loadmap-content .left img:nth-child(3){
+        margin-top: 75px;
+        margin-top: 8vw;
+    }
+    .loadmap-content .left img:nth-child(4){
+        margin-top: 100px;
+        margin-top: 15.333vw
+    }
+    .loadmap-content .left img:nth-child(5){
+        margin-top: 115px;
+        margin-top: 15.333vw;
+        transform: translateY(-5vw);
+    }
+    .contact{
+        margin-top: 55px;
+        margin-top: 7.333vw;
+    }
+    .contact .team{
+        flex-direction: column;
+    }
+    .contact .team li{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+        margin-bottom: 6.667vw;
+    }
+    .contact .team-img-container{
+        height: 46vw;
+    }
+    .contact .team li:first-child .team-img-container img{
+        width: 206px;
+        width: 27.467vw;
+    }
+    .contact .team li:nth-child(2) .team-img-container img{
+        width: 186px;
+        width: 24.800vw;
+    }
+    .contact .team li:nth-child(3) .team-img-container img{
+        width: 186px;
+        width: 24.800vw;
+        width: 33.800vw;
+    }
+    .contact .team-desc-container{
+        padding: 44px 0;
+        padding: 5.867vw 0;
+    }
+    .contact .team h4{
+        font-size: 42px;
+        font-size: 5.600vw;
+        margin-bottom: 22px;
+        margin-bottom: 2.933vw;
+    }
+    .contact .team p{
+        font-size: 28px;
+        font-size: 3.733vw;
+    }
+    .contact-container{
+        margin-top: 0;
+    }
+    .contact-container ul{
+        justify-content: space-between;
+    }
+    .contact-container li{
+        margin: 0;
+    }
+    .contact-container li img{
+        width: 150px;
+        width: 20vw;
+        height: 150px;
+        height: 20vw;
+    }
+    footer{
+        height: 172px;
+        height: 22.933vw;
+        transform: none !important;
+    }
+    .content footer .floor-container img{
+        bottom: 60px;
+        bottom: calc(8vw - 1px);
+    }
+    .content footer .rabbit-container{
+        top: auto;
+        bottom: 14px;
+        bottom: 8.5vw;
+    }
+    footer p{
+        font-size: 30px;
+        font-size: 4vw;
+    }
+    footer .green-block{
+        background-color: #043d30;
+        width: 100vw;
+        height: 61px;
+        height: 8vw;
+        position: absolute;
+        bottom: 0;
+    }
+    .top-btn{
+        width: 80px;
+        width: 10.667vw;
+        height: 180px;
+        height: 24vw;
+        right: 40px;
+        right: 5.333vw;
+        bottom: 40px;
+        bottom: 5.333vw;
+    }
+    .partnership .inner{
+        max-width: 670px;
+        max-width: 89.333vw;
+        padding-bottom: 155px;
+        padding-bottom: 20.667vw;
+    }
+    .partnership li{
+        width: 50%;
+    }
+
+
+
+    /* 2022-01-15 */
+    .swiper-pagination{
+        opacity: 1;
+        visibility: visible;
+    }
+    .partnership .swiper{
+        max-width: 89.333vw;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal{
+        bottom: 12.5vw !important;
+    }
+    .swiper-pagination-bullet-active{
+        width: 24px !important;
+        height: 24px !important;
+        width: 3.125vw !important;
+        height: 3.125vw !important;
+        border-radius: 100% !important;
+        background-color: #fff !important;
+    }
+    .swiper-pagination-bullet{
+        width: 24px !important;
+        height: 24px !important;
+        width: 3.125vw !important;
+        height: 3.125vw !important;
+        border-radius: 100% !important;
+        background-color: #96bafc !important;
+    }
+    /* 2022-01-15 */
+
+}
+/* mobile */
